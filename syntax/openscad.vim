@@ -23,8 +23,11 @@ syn keyword openscadConditional if else
 syn keyword openscadRepeat for intersection_for
 syn keyword openscadInclude include use
 syn keyword openscadCsgKeyword union difference intersection render intersection_for
-syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski 
+syn keyword openscadTransform scale rotate translate mirror multmatrix color minkowski hull glide subdiv
 syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface
+syn keyword openscadExtrude linear_extrude dxf_linear_extrude rotate_extrude dxf_rotate_extrude
+syn keyword openscadImport import import_stl import_off import_dxf
+syn keyword openscadDXF dxf_dim dxf_cross
 
 syn match openscadSpecialVariable "\$[a-zA-Z]\+\>" display
 syn match openscadModifier "^\s*[\*\!\#\%]" display
@@ -64,10 +67,13 @@ hi def link openscadStatement			Statement
 hi def link openscadNumbers			    Number
 hi def link openscadNumber			    Number
 hi def link openscadPrimitiveSolid		Keyword
+hi def link openscadExtrude     		Keyword
 hi def link openscadRepeat			    Repeat
 hi def link openscadSpecialVariable		Special
 hi def link openscadString			    String
 hi def link openscadTransform			Statement
 hi def link openscadCommentTodo			Todo
+hi def link openscadImport              Function
+hi def link openscadDXF                 Function
 
 let b:current_syntax = "openscad"
