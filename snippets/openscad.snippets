@@ -1,0 +1,16 @@
+# Transforms
+snippet rot
+	rotate ([${1:x}, ${2:y}, ${3:z}]) {
+		${4}
+	}
+snippet trans
+	translate ([${1:x}, ${2:y}, ${3:z}]) {
+		${4}
+	}
+# Shapes
+snippet cube
+	cube ([${1:x}, ${2:y}, ${3:z}]);
+snippet cyl
+	cylinder (h=${1:Height}, r=${2:Radius});
+snippet cone
+	cylinder (h=${1:Height}, r1=${2:Radius1}, r2=${3:Radius2});
