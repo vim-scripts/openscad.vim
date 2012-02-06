@@ -25,3 +25,6 @@ unlet s:cpo_save
 set ts=2
 set shiftwidth=2
 set softtabstop=2
+
+set foldmethod=syntax
+set foldenable

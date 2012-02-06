@@ -16,7 +16,7 @@ syn match openscadFunction /\<\h\w*\>/ contained display
 
 "syn keyword openscadModuleDef module
 syn keyword openscadModuleDef module nextgroup=openscadModule skipwhite skipempty
-syn match openscadModule /\<\h\w*\>/ contained display
+syn match openscadModule /\<\h\w*\>/ contained display fold
 
 syn keyword openscadStatement echo assign
 syn keyword openscadConditional if else
