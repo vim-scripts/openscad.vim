@@ -14,6 +14,7 @@ set cpo&vim
 let b:undo_ftplugin = "setl com< cms< inc< fo< ofu<"
 
 setlocal comments=f:// commentstring&
+setlocal commentstring=//\ %s
 setlocal formatoptions-=t formatoptions+=croql
 setlocal omnifunc=openscadcomplete#CompleteOpenSCAD
 
