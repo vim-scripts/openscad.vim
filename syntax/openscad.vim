@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     OpenSCAD
 " Maintainer:   Sirtaj Singh Kang <sirtaj-vim@sirtaj.net>
-" Last Changed: 2011 April 19
+" Last Changed: 2013 March 05
 
 if version < 600
     syntax clear
@@ -28,6 +28,7 @@ syn keyword openscadPrimitiveSolid cube sphere cylinder polyhedron surface
 syn keyword openscadExtrude linear_extrude dxf_linear_extrude rotate_extrude dxf_rotate_extrude
 syn keyword openscadImport import import_stl import_off import_dxf
 syn keyword openscadDXF dxf_dim dxf_cross
+syn keyword openscadPrimitive2D square circle polygon import_dxf
 
 syn match openscadSpecialVariable "\$[a-zA-Z]\+\>" display
 syn match openscadModifier "^\s*[\*\!\#\%]" display
@@ -41,7 +42,7 @@ syn region openscadString start=/"/ skip=/\\"/ end=/"/
 syn keyword openscadBoolean true false
 
 syn keyword openscadCommentTodo TODO FIXME XXX contained display
-syn match openscadInlineComment ://.*$: contains=scadCommentTodo
+syn match openscadInlineComment ://.*$: contains=openscadCommentTodo
 syn region openscadBlockComment start=:/\*: end=:\*/: fold contains=openscadCommentTodo
 
 syn region openscadBlock start="{" end="}" transparent fold
@@ -67,7 +68,8 @@ hi def link openscadStatement			Statement
 hi def link openscadNumbers			    Number
 hi def link openscadNumber			    Number
 hi def link openscadPrimitiveSolid		Keyword
-hi def link openscadExtrude     		Keyword
+hi def link openscadExtrude		Keyword
+hi def link openscadPrimitive2D		Keyword
 hi def link openscadRepeat			    Repeat
 hi def link openscadSpecialVariable		Special
 hi def link openscadString			    String

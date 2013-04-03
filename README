@@ -2,8 +2,10 @@ This is a mirror of http://www.vim.org/scripts/script.php?script_id=3556
 
 This is a quick hack at syntax highlighting for the OpenSCAD 3D modeling language -- http://www.openscad.org/
 
-Note that at the moment it doesn&#039t help detect errors such as mismatch blocks and parens.
+Note that at the moment it doesn&#039t help detect errors such as mismatched blocks and parens.
 
-TODOs include error management and auto filetype setup.
+TODOs include error management and quickfix/compiler support.
 
-I would appreciate feedback and suggestions for improvements, as I am extremely new to OpenSCAD at time of writing.
+I would appreciate feedback and suggestions for improvement, please use the script wiki link above.
+
+The plugin is hosted on github, see https://github.com/sirtaj/vim-openscad

@@ -1,2 +1,1 @@
-au! BufRead,BufNewFile *.scad set filetype=openscad 
-
+au BufRead,BufNewFile *.scad    setfiletype openscad
