@@ -1,0 +1,59 @@
+# Boilerplate
+snippet boilerplate
+	//  ${1:title}
+	//
+	//  Copyright ${2:2012} John Cooper
+	//
+	//  This program is free software: you can redistribute it and/or modify
+	//  it under the terms of the GNU General Public License as published by
+	//  the Free Software Foundation, either version 3 of the License, or
+	//   (at your option) any later version.
+	//
+	//  This program is distributed in the hope that it will be useful,
+	//  but WITHOUT ANY WARRANTY; without even the implied warranty of
+	//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	//  GNU General Public License for more details.
+	//
+	//  You should have received a copy of the GNU General Public License
+	//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+	// Make the curves more curvey
+	$fs=0.2;
+
+	module main () {
+		${3}
+	}
+
+	main ();
+
+# General languange
+snippet mod
+	module ${1:title} (${2}) {
+	  ${3}
+	}
+# Transforms
+snippet rot
+	rotate ([${1:x}, ${2:y}, ${3:z}]) {
+		${4}
+	}
+snippet trans
+	translate ([${1:x}, ${2:y}, ${3:z}]) {
+		${4}
+	}
+snippet union
+	union () {
+	  ${1}
+	}
+snippet diff
+	difference () {
+	  ${1}
+	}
+# Shapes
+snippet cube
+	cube ([${1:x}, ${2:y}, ${3:z}]);
+snippet cyl
+	cylinder (h=${1:Height}, r=${2:Radius});
+snippet cone
+	cylinder (h=${1:Height}, r1=${2:Radius1}, r2=${3:Radius2});
+snippet sphere
+	sphere (r=${1:radius});
